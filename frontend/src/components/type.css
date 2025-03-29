@@ -1,0 +1,34 @@
+/* In your styles.css */
+/* In your styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.1em solid black; /* Cursor effect */
+  font-family: "Roboto Mono", monospace; /* Font */
+  font-size: 1rem; /* Font size */
+  color: #fff; /* Text color */
+  background-color: #333; /* Background color */
+  padding: 5px; /* Padding around the text */
+  animation: typing 4s steps(30) normal both, blink 0.75s step-end infinite;
+}
+.text-shadow {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+}

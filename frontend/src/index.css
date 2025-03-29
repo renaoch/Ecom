@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(246, 164, 255, 0.7),
+    0 0 20px rgba(152, 137, 255, 0.7), 0 0 30px #00ffffb3;
+  font-size: 1.5rem;
+  font-weight: 750;
+}
+
+.custom-google-button {
+  background-color: black !important;
+  border-radius: 50% !important; /* Ensure the button is round */
+  padding: 10px 20px !important; /* Adjust padding to maintain a circular shape */
+  width: auto !important;
+  height: auto !important;
+}
+
+.futuristic-text {
+  font-family: "Orbitron", sans-serif; /* Modern, futuristic font */
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(
+    45deg,
+    #00bcd4,
+    #ff4081,
+    #3f51b5
+  ); /* Cool gradient effect */
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: glow 2s ease-in-out infinite, typewriter 2s steps(40);
+  position: relative;
+  overflow: hidden;
+
+  /* Prevent text from wrapping */
+  white-space: nowrap;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8),
+      0 0 20px rgba(255, 64, 129, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 188, 212, 1), 0 0 40px rgba(255, 64, 129, 1);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8),
+      0 0 20px rgba(255, 64, 129, 0.8);
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
