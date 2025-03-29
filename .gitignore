@@ -1,0 +1,16 @@
+# Ignore Node.js dependencies
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore environment files
+backend/.env
+frontend/.env
+
+# Ignore build files
+backend/dist/
+frontend/dist/
+
+# Ignore editor config files
+.vscode/
+.idea/
+.DS_Store
